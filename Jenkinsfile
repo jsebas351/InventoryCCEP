@@ -51,17 +51,17 @@ pipeline {
             }
         }
 
-        stage('Run Frontend') {
+        stage('Build Frontend') {
             steps {
                 echo 'Starting React frontend...'
                 dir('frontend-ccep') {
                     script {
                         if (isUnix()) {
                             sh 'npm install'
-                            sh 'npm run dev'
+                            sh 'npm run build'
                         } else {
                             bat 'npm install'
-                            bat 'npm run dev'
+                            bat 'npm run build'
                         }
                     }
                 }
