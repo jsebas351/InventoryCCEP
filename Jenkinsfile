@@ -42,9 +42,9 @@ pipeline {
                 dir('backendCCEP') {
                     script {
                         if (isUnix()) {
-                            sh 'docker build -t ${env.DOCKER_IMAGE_BACKEND} .'
+                            sh "docker build -t ${env.DOCKER_IMAGE_BACKEND} ."
                         } else {
-                            bat 'docker build -t ${env.DOCKER_IMAGE_BACKEND} .'
+                            bat "docker build -t ${env.DOCKER_IMAGE_BACKEND} ."
                         }
                     }
                 }
