@@ -10,7 +10,6 @@
 	<groupId>com.api</groupId>
 	<artifactId>backendCCEP</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
 	<name>backendCCEP</name>
 	<description>This is a proyect, for the business Cuidado con el Perro, by
 		Miguel Pardo</description>
