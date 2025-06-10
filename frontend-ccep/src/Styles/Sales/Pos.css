@@ -1,0 +1,49 @@
+.maxWidth {
+  width: 10px;
+  min-width: 1px;
+  max-width: 10px !important;
+}
+
+.summary-sale-width {
+  width: 700px;
+  min-width: 700px !important;
+}
+
+.vertical-line {
+  border-left: 1px solid #ccc;
+  height: 100%;
+  margin: -18px auto 0;
+  min-height: 980px;
+  width: 1px;
+  min-width: 1px;
+  max-width: 1px;
+}
+
+.scrollable-products {
+  max-height: 700px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.scrollable-summary {
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+td.product-name {
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.width-quantity {
+  max-width: 100px;
+}
+
+.highlighted {
+  background-color: #ffff99;
+  transition: background-color 0.3s ease;
+}

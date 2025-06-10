@@ -1,0 +1,44 @@
+.containerButton {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.btns {
+  border: 2px solid;
+  background-color: #ffffed;
+  padding: 8px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 48%;
+}
+
+.success {
+  border-color: #ffd148;
+  color: #ffd148;
+}
+
+.success:hover {
+  background-color: #ffd148;
+  color: #ffffed;
+}
+
+.danger {
+  border-color: #7C6522;
+  color: #7C6522;
+}
+
+.danger:hover {
+  background: #7C6522;
+  color: #ffffed;
+}
+
+input.error {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+}

@@ -1,0 +1,72 @@
+.Modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1400;
+  }
+  
+  .ModalContent {
+    background-color: #ffffed;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    animation: modal-fade-in 0.3s ease-in-out;
+  }
+  
+  .ModalContent.closing {
+    animation: modal-fade-out 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(0);
+  }
+  
+  @keyframes modal-fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes modal-fade-out {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+  
+  .ModalHeader {
+    background-color: #fff2ab;
+    padding: 10px;
+    border-radius: 5px;
+    color: #413E38;
+    margin: 20px;
+  }
+  
+  .CloseButton {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #EABE3F;
+    cursor: pointer;
+    transition: color 0.3s;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .CloseButton:hover {
+    color: #ffbf00;
+  }

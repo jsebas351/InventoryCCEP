@@ -1,0 +1,22 @@
+.primary-button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffed;
+    background-color: #ffd148;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .primary-button:hover {
+    background-color: #dbb339;
+  }
+  
+  .primary-button:active {
+    background-color: #cca635;
+  }
+  

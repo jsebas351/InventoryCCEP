@@ -1,0 +1,7 @@
+.navbar {
+  background-color: #eabe3f;
+}
+.navbar li a {
+  text-decoration: none;
+  color: black;
+}
