@@ -42,10 +42,9 @@ pipeline {
                 dir('backendCCEP') {
                     script {
                         if (isUnix()) {
-                            sh 'chmod +x mvnw'
-                            sh './mvnw spring-boot:run'
+                            sh 'docker build -t ${env.DOCKER_IMAGE_BACKEND} .'
                         } else {
-                            bat 'mvnw.cmd spring-boot:run'
+                            bat 'docker build -t ${env.DOCKER_IMAGE_BACKEND} .'
                         }
                     }
                 }
